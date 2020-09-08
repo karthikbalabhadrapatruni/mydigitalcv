@@ -7,6 +7,7 @@ return (
   <div id = 'top'>
   <img src = {img} className = 'img'/>
   <div className = 'name'><h1>Hello! I'm Karthik.</h1></div>
+  
 
   </div>
 )

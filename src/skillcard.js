@@ -11,6 +11,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    minWidth: 345,
+    height: 'fit-content',
     height: 400,
   },
   media: {
@@ -19,38 +21,21 @@ const useStyles = makeStyles({
 });
 
 
-export default function ProjectCard(props) {
+export default function SkillCard(props) {
   const classes = useStyles();
   const cls = classes.root + ' projectCard';
-  const [hover, setHover] = React.useState(false);
-  const toggleHover = () => {
-  setHover(!hover)
-    if(!hover){
-      console.log('hover')
-    } else {
-        console.log('not hover')
-      }
-
-
-  }
   return (
-    <Card className={cls} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
-      <CardActionArea onClick = {()=>{window.open(props.link)}}>
-        <CardMedia
-          className={classes.media}
-          image={props.img}
-          title={props.label}
-        />
+    <Card className={cls}>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
           {props.title}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {props.data}
+          <Typography variant="body2" component="p">
+            {props.data. map( (l) => {
+              return <i>{l}<br/><br/></i>
+            })}
           </Typography>
         </CardContent>
-      </CardActionArea>
-
     </Card>
   );
 }

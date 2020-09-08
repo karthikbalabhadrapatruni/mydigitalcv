@@ -12,21 +12,30 @@ import Project from './projects'
 import Contact from './footer'
 import Education from './education'
 import Skills from './skills'
+import Certificates from './certifications'
+
+import AppColps from './appbarcolps'
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+
   menuButton: {
     marginRight: theme.spacing(2),
   },
   title: {
-    flexGrow: 1,
+
+    width: '80%',
     textAlign: "left",
     color : 'black',
 
   },
   appBar : {
     backgroundColor: 'white !important' ,
+    position : 'fixed',
+    width: '100%'
   },
   link: {
     margin : '30px',
@@ -42,26 +51,14 @@ function App() {
     <Typography variant="h5" className={classes.title}>
       Mohana Koundinya Karthik Balabhadrapatruni
     </Typography>
-    <Link href="#projects" className={classes.link}>
-Projects
-  </Link>
-  <Link href="#contact" className={classes.link}>
-Contact
-  </Link>
-  <Link href="#" className={classes.link}>
-  Resume
-  </Link>
+<AppColps />
   </Toolbar>
 </AppBar>
 <Top />
-<br/>
-<br/>
 <Project />
-<br/><br/>
 <Skills />
-<br/><br/>
+<Certificates />
 <Education />
-<br/><br/>
 <Contact />
     </div>
   );

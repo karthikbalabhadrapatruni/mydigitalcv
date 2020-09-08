@@ -11,10 +11,10 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
-    height: 400,
+    height: 340,
   },
   media: {
-    height: 140,
+    height: 240,
   },
 });
 
@@ -22,19 +22,8 @@ const useStyles = makeStyles({
 export default function ProjectCard(props) {
   const classes = useStyles();
   const cls = classes.root + ' projectCard';
-  const [hover, setHover] = React.useState(false);
-  const toggleHover = () => {
-  setHover(!hover)
-    if(!hover){
-      console.log('hover')
-    } else {
-        console.log('not hover')
-      }
-
-
-  }
   return (
-    <Card className={cls} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+    <Card className={cls} >
       <CardActionArea onClick = {()=>{window.open(props.link)}}>
         <CardMedia
           className={classes.media}
@@ -42,10 +31,7 @@ export default function ProjectCard(props) {
           title={props.label}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-          {props.title}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2"  component="p">
             {props.data}
           </Typography>
         </CardContent>
