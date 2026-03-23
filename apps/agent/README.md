@@ -4,7 +4,6 @@ This folder contains the Python AI backend for the portfolio.
 
 Stack:
 - `FastAPI` for the HTTP service
-- `LangGraph` for routing and orchestration
 - `Gemini` for text generation
 
 ## Run Locally

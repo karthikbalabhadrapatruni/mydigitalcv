@@ -5,13 +5,12 @@ Monorepo for Mohana Koundinya Karthik Balabhadrapatruni's portfolio.
 ## Apps
 
 - [`apps/web`](/Users/karthikbalabhadrapatruni/Downloads/mydigitalcv/apps/web): Next.js portfolio UI
-- [`apps/agent`](/Users/karthikbalabhadrapatruni/Downloads/mydigitalcv/apps/agent): FastAPI + LangGraph + Gemini backend
+- [`apps/agent`](/Users/karthikbalabhadrapatruni/Downloads/mydigitalcv/apps/agent): FastAPI + Gemini backend
 
 ## Stack
 
 - `Next.js` App Router for the portfolio
 - `FastAPI` for the Python API service
-- `LangGraph` for workflow routing
 - `Gemini` for model responses
 
 ## Monorepo Structure
@@ -58,5 +57,5 @@ uvicorn apps.agent.app.main:app --reload --port 8000
 - [`apps/web/components/portfolio-ai.js`](/Users/karthikbalabhadrapatruni/Downloads/mydigitalcv/apps/web/components/portfolio-ai.js): AI panel UI
 - [`apps/web/app/api/portfolio-ai/route.js`](/Users/karthikbalabhadrapatruni/Downloads/mydigitalcv/apps/web/app/api/portfolio-ai/route.js): proxy from Next.js to Python
 - [`apps/agent/app/main.py`](/Users/karthikbalabhadrapatruni/Downloads/mydigitalcv/apps/agent/app/main.py): FastAPI app
-- [`apps/agent/app/graph.py`](/Users/karthikbalabhadrapatruni/Downloads/mydigitalcv/apps/agent/app/graph.py): LangGraph workflow
+- [`apps/agent/app/service.py`](/Users/karthikbalabhadrapatruni/Downloads/mydigitalcv/apps/agent/app/service.py): request routing and prompt construction
 - [`apps/agent/app/gemini.py`](/Users/karthikbalabhadrapatruni/Downloads/mydigitalcv/apps/agent/app/gemini.py): Gemini client

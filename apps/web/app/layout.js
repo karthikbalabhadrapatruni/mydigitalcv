@@ -1,12 +1,12 @@
-import { Cormorant_Garamond, Manrope } from 'next/font/google';
+import { Fraunces, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 
-const bodyFont = Manrope({
+const bodyFont = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-body',
 });
 
-const displayFont = Cormorant_Garamond({
+const displayFont = Fraunces({
   subsets: ['latin'],
   variable: '--font-display',
   weight: ['500', '600', '700'],
@@ -15,7 +15,7 @@ const displayFont = Cormorant_Garamond({
 export const metadata = {
   title: 'Karthik Balabhadrapatruni | Full-Stack Developer',
   description:
-    'Full-stack portfolio for Mohana Koundinya Karthik Balabhadrapatruni, featuring React, Next.js, Angular, Node.js, Python, cloud, and agentic AI work.',
+    'Full-stack portfolio for Mohana Koundinya Karthik Balabhadrapatruni, featuring React, Next.js, Angular, Node.js, Python, cloud, accessibility, and practical AI work.',
 };
 
 export default function RootLayout({ children }) {

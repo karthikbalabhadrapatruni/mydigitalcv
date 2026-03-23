@@ -3,14 +3,14 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .config import get_settings
 from .gemini import GeminiClient
-from .graph import run_portfolio_agent
 from .models import PortfolioAIRequest, PortfolioAIResponse
+from .service import generate_portfolio_response
 
 settings = get_settings()
 
 app = FastAPI(
     title="Portfolio Agent Service",
-    description="FastAPI + LangGraph backend for the personal portfolio AI assistant.",
+    description="FastAPI + Gemini backend for the personal portfolio AI assistant.",
 )
 
 app.add_middleware(
@@ -35,7 +35,7 @@ async def portfolio_ai(request: PortfolioAIRequest) -> PortfolioAIResponse:
     )
 
     try:
-        result = await run_portfolio_agent(request, gemini_client)
+        answer, resolved_mode = await generate_portfolio_response(request, gemini_client)
     except ValueError as error:
         raise HTTPException(status_code=500, detail=str(error)) from error
     except RuntimeError as error:
@@ -43,10 +43,10 @@ async def portfolio_ai(request: PortfolioAIRequest) -> PortfolioAIResponse:
     except Exception as error:
         raise HTTPException(
             status_code=500,
-            detail="Unexpected error while running the portfolio agent workflow.",
+            detail="Unexpected error while generating the portfolio AI response.",
         ) from error
 
     return PortfolioAIResponse(
-        answer=result.answer or "No response text was returned.",
-        resolved_mode=result.resolved_mode or "experience",
+        answer=answer or "No response text was returned.",
+        resolved_mode=resolved_mode,
     )

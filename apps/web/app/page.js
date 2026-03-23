@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import PortfolioAI from '../components/portfolio-ai';
 import heroImage from '../src/images/1_cCdSJ0mOqjQkm-soL5hlIw.jpeg';
-import noteRideImage from '../src/images/noteride.jpg';
 import handGestureImage from '../src/images/hci.png';
 import resultAnalysisImage from '../src/images/resultAnalysis.png';
+import noteRideImage from '../src/images/noteride.jpg';
 
 const profile = {
   firstName: 'Karthik',
   fullName: 'Mohana Koundinya Karthik Balabhadrapatruni',
   title: 'Full-Stack Developer',
-  subtitle: 'MEAN, MERN, Python, Cloud, and Agentic AI',
+  subtitle: 'React, Next.js, Angular, Python, cloud systems, and agentic AI delivery',
   summary:
-    'Full-stack developer with 5+ years of hands-on experience building scalable web applications. Strong across frontend and backend development, with recent work spanning Agentic AI, micro-frontends, cloud infrastructure, accessibility, and performance optimization.',
+    'Full-stack developer with 5+ years of experience building scalable web products across React, Next.js, Angular, Node.js, Python, cloud delivery, accessibility, and performance engineering. Recent work includes agentic AI proofs of concept, micro-frontend systems, and platform-level frontend architecture.',
   email: 'karthik.bmk3@gmail.com',
   github: 'https://github.com/karthikbalabhadrapatruni',
   linkedin: 'https://www.linkedin.com/in/karthikbalabhadrapatruni',
@@ -19,36 +19,36 @@ const profile = {
 };
 
 const stats = [
-  { value: '5+', label: 'Years building production applications' },
-  { value: '7', label: 'Engineers guided in Agile delivery' },
-  { value: '85+', label: 'Desktop Lighthouse score achieved' },
-  { value: 'WCAG 2.2', label: 'Accessibility baseline delivered' },
+  { value: '5+', label: 'Years in full-stack delivery' },
+  { value: '7', label: 'Engineers led in Agile execution' },
+  { value: '85+', label: 'Desktop performance score achieved' },
+  { value: 'WCAG 2.2', label: 'Accessibility standard delivered' },
 ];
 
-const strengths = [
+const focusAreas = [
   {
-    eyebrow: 'Frontend Systems',
-    title: 'Next.js, React, Angular, SCSS, and white-labeled UI platforms.',
+    eyebrow: 'Frontend Architecture',
+    title: 'Interfaces built for scale, reuse, and brand flexibility.',
     copy:
-      'Built micro-frontend applications, dynamic theming systems, custom font workflows, and polished interfaces designed for both scale and maintainability.',
+      'Experience across React, Next.js, Angular, micro-frontends, white-labeled UI, theming systems, and performance-sensitive product surfaces.',
   },
   {
-    eyebrow: 'Backend and Data',
-    title: 'Node.js, Express.js, Python, MongoDB, MySQL, and Postgres.',
+    eyebrow: 'Backend Delivery',
+    title: 'APIs, data flows, permissions, and integrations that support real products.',
     copy:
-      'Comfortable owning API layers, data flows, permission models, and cross-system integrations for enterprise-facing products.',
+      'Comfortable with Node.js, Express.js, Python, MongoDB, MySQL, and Postgres in enterprise-facing product environments.',
   },
   {
-    eyebrow: 'AI and Automation',
-    title: 'LangGraph, LangChain, LlamaIndex, Azure OpenAI, Whisper, MCP.',
+    eyebrow: 'Applied AI',
+    title: 'Model-powered workflows grounded in actual user tasks and system context.',
     copy:
-      'Led multiple agentic AI proofs of concept and integrated AI agents with existing tools using Python-based MCP servers and clients.',
+      'Recent work includes AI proofs of concept, tool integrations, Python services, retrieval patterns, and assistant-style workflows.',
   },
   {
-    eyebrow: 'Cloud and Delivery',
-    title: 'AWS, Azure, Terraform, CI pipelines, performance, and reliability.',
+    eyebrow: 'Cloud and Reliability',
+    title: 'Delivery quality shaped by cloud architecture, release practices, and performance.',
     copy:
-      'Delivered cost-aware infrastructure and improved FCP, LCP, CLS, and TBT across frontend surfaces while keeping accessibility in scope.',
+      'Hands-on with AWS, Azure, Terraform, and frontend optimization while keeping accessibility and maintainability in scope.',
   },
 ];
 
@@ -59,12 +59,12 @@ const experience = [
     company: 'Infosys Ltd.',
     points: [
       'Led an Agile development team of 7 from concept to deployment.',
-      'Built agentic AI POCs using LangGraph, LangChain, LlamaIndex, Azure OpenAI, Whisper, Azure Search, and Postgres.',
-      'Integrated AI agents with existing systems through Python MCP servers and clients.',
+      'Built agentic AI proofs of concept using orchestration, retrieval, speech, and tool-integration patterns.',
+      'Integrated AI flows with existing systems through Python-based services and backend tooling.',
       'Delivered white-labeled micro-frontend applications with Next.js and React.js.',
-      'Improved performance metrics including FCP, LCP, CLS, and TBT, crossing 85+ desktop and 60+ mobile scores.',
+      'Improved FCP, LCP, CLS, and TBT, achieving 85+ desktop and 60+ mobile scores.',
       'Ensured alignment with WCAG 2.2 Level A accessibility requirements.',
-      'Shipped infrastructure and delivery solutions with Terraform, Azure Pipelines, Lambda, AppSync, ALB, EC2, API Gateway, S3, and CloudFront.',
+      'Implemented infrastructure and delivery workflows using Terraform, Azure Pipelines, and AWS services.',
     ],
   },
   {
@@ -74,29 +74,35 @@ const experience = [
     points: [
       'Contributed to a no-code and low-code platform for webpage generation.',
       'Worked across Angular frontend, Express.js backend, and MongoDB.',
-      'Built user and group management flows with granular permissions and role definitions.',
-      'Implemented dynamic theme customization and custom font import workflows using SCSS.',
-    ],
-  },
-  {
-    period: 'Jun 2018 - Jul 2018',
-    role: 'Game Programmer Intern',
-    company: 'APSSDC',
-    points: [
-      'Participated in the IGDC Summer Internship in association with KAMK University, Finland.',
-      'Built the endless running game NOTERIDE using Unity 3D and C#.',
+      'Built user and group management flows with permissions and role definitions.',
+      'Implemented dynamic theming and custom font support using SCSS.',
     ],
   },
 ];
 
+const professionalHighlights = [
+  {
+    tag: 'Enterprise AI',
+    title: 'Agentic AI Proofs of Concept',
+    copy:
+      'Focused on orchestration, retrieval, speech, and system integration so the work moves beyond demo-only chatbot patterns.',
+    image: handGestureImage,
+  },
+  {
+    tag: 'Platform UI',
+    title: 'White-Labeled Frontend Platform',
+    copy:
+      'Frontend architecture shaped for reuse, brand customization, performance tuning, and accessibility compliance.',
+    image: resultAnalysisImage,
+  },
+];
+
 const capabilities = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'Angular',
   'React.js',
   'Next.js',
+  'Angular',
+  'TypeScript',
+  'JavaScript',
   'SCSS',
   'Node.js',
   'Express.js',
@@ -110,34 +116,9 @@ const capabilities = [
   'Git',
   'Jira',
   'Instana',
-  'MongoDB Atlas',
   'Lighthouse',
   'Strapi',
   'Grafana',
-];
-
-const featuredWork = [
-  {
-    tag: 'Enterprise AI',
-    title: 'Agentic AI Exploration',
-    copy:
-      'Proofs of concept built around orchestration, retrieval, speech, and tool integration instead of isolated demos.',
-    image: handGestureImage,
-  },
-  {
-    tag: 'Platform Engineering',
-    title: 'White-Labeled Micro-Frontend UI',
-    copy:
-      'Frontend architecture shaped for reusability, branding flexibility, performance, and accessibility.',
-    image: resultAnalysisImage,
-  },
-  {
-    tag: 'Early Build',
-    title: 'NOTERIDE',
-    copy:
-      'A Unity-based endless runner that still adds range to the portfolio by showing experimentation beyond web stacks.',
-    image: noteRideImage,
-  },
 ];
 
 function SectionHeader({ eyebrow, title, body }) {
@@ -163,7 +144,7 @@ export default function HomePage() {
         <nav className="topnav" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
-          <a href="#work">Work</a>
+          <a href="#work">Highlights</a>
           <a href="#ai">AI</a>
           <a href="#stack">Stack</a>
           <a href="#contact">Contact</a>
@@ -173,11 +154,9 @@ export default function HomePage() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="hero-kicker">Portfolio 2026</p>
-          <h1>
-            Full-stack engineering with frontend taste, backend ownership, cloud
-            depth, and AI curiosity.
-          </h1>
+          <h1>Building product-grade interfaces, cloud-backed systems, and practical AI workflows.</h1>
           <p className="hero-text">{profile.summary}</p>
+
           <div className="hero-actions">
             <a className="button button-primary" href={profile.resume} target="_blank" rel="noreferrer">
               Open Resume
@@ -186,6 +165,7 @@ export default function HomePage() {
               View LinkedIn
             </a>
           </div>
+
           <div className="identity-card" id="about">
             <span>{profile.title}</span>
             <strong>{profile.fullName}</strong>
@@ -204,10 +184,9 @@ export default function HomePage() {
             />
           </div>
           <div className="overlay-card">
-            <p>Currently building</p>
+            <p>Current focus</p>
             <strong>
-              scalable apps, AI-enabled flows, accessible UI, and cloud-backed
-              delivery systems
+              scalable frontend systems, accessible user experiences, and AI-enabled flows that connect to real tools
             </strong>
           </div>
         </div>
@@ -225,13 +204,13 @@ export default function HomePage() {
       <section className="bento-layout">
         <article className="bento-intro bento-panel">
           <SectionHeader
-            eyebrow="Why This Portfolio"
-            title="A sharper, current version of the profile you wanted."
-            body="This rewrite is based on your latest Infosys and full-stack experience, not the older academic portfolio content."
+            eyebrow="Positioning"
+            title="A portfolio centered on current professional delivery, not older academic project lists."
+            body="The story here is frontend depth, backend ownership, cloud delivery, performance, accessibility, and practical AI work."
           />
         </article>
 
-        {strengths.map((item) => (
+        {focusAreas.map((item) => (
           <article className="bento-panel" key={item.title}>
             <p className="panel-eyebrow">{item.eyebrow}</p>
             <h3>{item.title}</h3>
@@ -243,8 +222,8 @@ export default function HomePage() {
       <section className="section-block" id="experience">
         <SectionHeader
           eyebrow="Experience"
-          title="Recent work centered on platform ownership, frontend quality, and fast-moving product delivery."
-          body="The strongest signal in your profile is that you can move across UI, APIs, infrastructure, and AI experimentation without losing execution quality."
+          title="Recent work across frontend systems, backend delivery, cloud infrastructure, and applied AI."
+          body="The strongest signal in your profile is breadth with execution quality: you can move across UI, APIs, infrastructure, and AI workflows without losing product thinking."
         />
         <div className="experience-list">
           {experience.map((item) => (
@@ -266,12 +245,13 @@ export default function HomePage() {
 
       <section className="section-block" id="work">
         <SectionHeader
-          eyebrow="Selected Work Themes"
-          title="Presented like portfolio case-study slices, even when the work itself is enterprise-facing."
-          body="Top portfolios usually feel curated, so this section focuses on distinct strengths instead of a random project dump."
+          eyebrow="Professional Highlights"
+          title="A smaller set of meaningful work themes, with academic projects moved to supporting context."
+          body="This keeps the portfolio focused on enterprise-facing strengths instead of making older student work carry too much weight."
         />
+
         <div className="featured-grid">
-          {featuredWork.map((item) => (
+          {professionalHighlights.map((item) => (
             <article className="featured-card" key={item.title}>
               <div className="featured-image">
                 <Image
@@ -289,6 +269,24 @@ export default function HomePage() {
             </article>
           ))}
         </div>
+
+        <div className="archive-strip">
+          <div className="archive-copy">
+            <p className="panel-eyebrow">Earlier Exploration</p>
+            <h3>Academic work is still visible, but it is no longer the center of the story.</h3>
+            <span>
+              Earlier ML experiments and the Unity-based NOTERIDE prototype helped shape the engineering range, but the portfolio now prioritizes current product delivery.
+            </span>
+          </div>
+          <div className="archive-thumb">
+            <Image
+              src={noteRideImage}
+              alt="NOTERIDE prototype"
+              placeholder="blur"
+              sizes="(max-width: 900px) 100vw, 20vw"
+            />
+          </div>
+        </div>
       </section>
 
       <PortfolioAI />
@@ -296,7 +294,7 @@ export default function HomePage() {
       <section className="section-block stack-section" id="stack">
         <SectionHeader
           eyebrow="Core Stack"
-          title="A modern stack spread across frontend frameworks, backend systems, cloud, observability, and delivery tooling."
+          title="The stack spans frontend frameworks, backend systems, cloud services, observability, and delivery tooling."
         />
         <div className="chip-cloud">
           {capabilities.map((item) => (
@@ -305,21 +303,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-block education-strip">
-        <div>
-          <p className="panel-eyebrow">Education</p>
-          <h3>B.Tech, Computer Science</h3>
-          <span>Jawaharlal Nehru Technological University, 2016 to 2020</span>
-        </div>
-        <div className="education-score">CGPA 8.4</div>
-      </section>
-
       <footer className="footer-card" id="contact">
         <div>
-          <p className="panel-eyebrow">Let&apos;s Connect</p>
-          <h2>{profile.firstName} is open to full-stack, frontend-heavy, and AI-enabled product work.</h2>
+          <p className="panel-eyebrow">Contact</p>
+          <h2>{profile.firstName} is open to full-stack roles with strong frontend, platform, or AI-enabled product ownership.</h2>
           <span>
-            Best fit roles are the ones where strong interface quality and solid engineering depth are both valued.
+            Best-fit opportunities are the ones where interface quality, engineering depth, and delivery ownership all matter.
           </span>
         </div>
         <div className="footer-actions">

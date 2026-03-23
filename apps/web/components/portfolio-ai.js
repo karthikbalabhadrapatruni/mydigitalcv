@@ -57,14 +57,14 @@ export default function PortfolioAI() {
       <div className="ai-header">
         <div className="section-header">
           <p>Portfolio AI</p>
-          <h2>Ask this portfolio the questions recruiters and hiring managers actually care about.</h2>
+          <h2>Ask for a fit summary, a recruiter-ready answer, or a case-study style explanation.</h2>
           <span>
-            This is a focused AI layer on top of your resume and portfolio context, designed for experience Q and A, job matching, and case study explanations.
+            This assistant is grounded in your actual resume and portfolio context, so it answers with relevant experience instead of generic chatbot filler.
           </span>
         </div>
         <div className="ai-badges">
           <span>Python FastAPI</span>
-          <span>LangGraph workflow</span>
+          <span>Gemini backed</span>
           <span>Recruiter-friendly</span>
           <span>Portfolio grounded</span>
         </div>
