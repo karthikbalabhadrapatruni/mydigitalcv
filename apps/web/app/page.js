@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ImmersiveShell from '../components/immersive-shell';
 import PortfolioAI from '../components/portfolio-ai';
 import heroImage from '../src/images/1_cCdSJ0mOqjQkm-soL5hlIw.jpeg';
 import handGestureImage from '../src/images/hci.png';
@@ -121,6 +122,56 @@ const capabilities = [
   'Grafana',
 ];
 
+const signalItems = [
+  'React and Next.js',
+  'Micro-frontend delivery',
+  'Agentic AI experiments',
+  'Python services',
+  'Accessibility and WCAG',
+  'Performance optimization',
+  'AWS and Azure',
+  'Terraform and pipelines',
+];
+
+const briefing = [
+  {
+    label: 'Role signature',
+    value: 'Full-stack engineer with frontend depth',
+  },
+  {
+    label: 'Current edge',
+    value: 'AI workflows, accessibility, and platform delivery',
+  },
+  {
+    label: 'Working style',
+    value: 'Agile leadership, system thinking, shipping mindset',
+  },
+];
+
+const interactionFlow = [
+  {
+    step: '01',
+    title: 'Scan the signal',
+    copy: 'Start with the metrics, architecture themes, and current delivery focus.',
+  },
+  {
+    step: '02',
+    title: 'Read the systems story',
+    copy: 'Move through experience and professional highlights as if you are reviewing a product briefing.',
+  },
+  {
+    step: '03',
+    title: 'Interrogate the profile',
+    copy: 'Use the AI console to test role fit, ask for summaries, or turn work into case-study answers.',
+  },
+];
+
+const missionFeed = [
+  'Routing AI-assisted product experiences into real systems',
+  'Improving Lighthouse metrics without losing brand flexibility',
+  'Designing frontend platforms that scale across teams and use cases',
+];
+
 function SectionHeader({ eyebrow, title, body }) {
   return (
     <div className="section-header">
@@ -133,93 +184,158 @@ function SectionHeader({ eyebrow, title, body }) {
 
 export default function HomePage() {
   return (
-    <main className="page-shell">
-      <div className="ambient ambient-a" />
-      <div className="ambient ambient-b" />
+    <ImmersiveShell>
+      <main className="page-shell">
+        <div className="ambient ambient-a" />
+        <div className="ambient ambient-b" />
 
-      <header className="topbar">
-        <a className="brand" href="#top">
-          KB
-        </a>
-        <nav className="topnav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#work">Highlights</a>
-          <a href="#ai">AI</a>
-          <a href="#stack">Stack</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+        <header className="topbar" data-reveal>
+          <a className="brand" href="#top">
+            KB
+          </a>
+          <nav className="topnav" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#work">Highlights</a>
+            <a href="#ai">AI</a>
+            <a href="#stack">Stack</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
 
-      <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="hero-kicker">Portfolio 2026</p>
-          <h1>Building product-grade interfaces, cloud-backed systems, and practical AI workflows.</h1>
-          <p className="hero-text">{profile.summary}</p>
+        <section className="hero" id="top" data-reveal>
+          <div className="hero-copy">
+            <p className="hero-kicker">Portfolio 2026</p>
+            <h1>Building product-grade interfaces, cloud-backed systems, and practical AI workflows.</h1>
+            <p className="hero-text">{profile.summary}</p>
 
-          <div className="hero-actions">
-            <a className="button button-primary" href={profile.resume} target="_blank" rel="noreferrer">
-              Open Resume
-            </a>
-            <a className="button button-secondary" href={profile.linkedin} target="_blank" rel="noreferrer">
-              View LinkedIn
-            </a>
+            <div className="hero-actions">
+              <a className="button button-primary" href={profile.resume} target="_blank" rel="noreferrer">
+                Open Resume
+              </a>
+              <a className="button button-secondary" href={profile.linkedin} target="_blank" rel="noreferrer">
+                View LinkedIn
+              </a>
+            </div>
+
+            <div className="identity-card" id="about">
+              <span>{profile.title}</span>
+              <strong>{profile.fullName}</strong>
+              <p>{profile.subtitle}</p>
+            </div>
+
+            <div className="terminal-panel">
+              <div className="terminal-top">
+                <span />
+                <span />
+                <span />
+              </div>
+              <div className="terminal-body">
+                <p>$ operator.summary</p>
+                {missionFeed.map((item) => (
+                  <div className="terminal-line" key={item}>
+                    <span>&gt;</span>
+                    <strong>{item}</strong>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
-          <div className="identity-card" id="about">
-            <span>{profile.title}</span>
-            <strong>{profile.fullName}</strong>
-            <p>{profile.subtitle}</p>
+          <div className="hero-visual">
+            <div className="portrait-card">
+              <Image
+                src={heroImage}
+                alt={profile.fullName}
+                priority
+                placeholder="blur"
+                sizes="(max-width: 900px) 100vw, 38vw"
+              />
+            </div>
+            <div className="overlay-card">
+              <p>Current focus</p>
+              <strong>
+                scalable frontend systems, accessible user experiences, and AI-enabled flows that connect to real tools
+              </strong>
+            </div>
+            <div className="hero-mini-card hero-mini-card-a">
+              <span>Frontend</span>
+              <strong>Next.js, Angular, React</strong>
+            </div>
+            <div className="hero-mini-card hero-mini-card-b">
+              <span>Cloud</span>
+              <strong>AWS, Azure, Terraform</strong>
+            </div>
+            <div className="hero-gridlines" aria-hidden="true" />
           </div>
-        </div>
+        </section>
 
-        <div className="hero-visual">
-          <div className="portrait-card">
-            <Image
-              src={heroImage}
-              alt={profile.fullName}
-              priority
-              placeholder="blur"
-              sizes="(max-width: 900px) 100vw, 38vw"
+        <section className="stats-grid" data-reveal>
+          {stats.map((item) => (
+            <article className="stat-card" key={item.label}>
+              <strong>{item.value}</strong>
+              <span>{item.label}</span>
+            </article>
+          ))}
+        </section>
+
+        <section className="signal-strip" aria-label="Professional signals" data-reveal>
+          <div className="signal-track">
+            {[...signalItems, ...signalItems].map((item, index) => (
+              <span key={`${item}-${index}`}>{item}</span>
+            ))}
+          </div>
+        </section>
+
+        <section className="briefing-grid" id="about" data-reveal>
+          <article className="command-panel">
+            <p className="panel-eyebrow">Operator Brief</p>
+            <h2>This portfolio is designed like a live systems briefing, not a static resume page.</h2>
+            <p>
+              The goal is to make your profile feel closer to a modern product console: strong signals first,
+              deeper evidence next, and interactive exploration when someone wants more detail.
+            </p>
+          </article>
+
+          <article className="briefing-stack">
+            {briefing.map((item) => (
+              <div className="briefing-card" key={item.label}>
+                <span>{item.label}</span>
+                <strong>{item.value}</strong>
+              </div>
+            ))}
+          </article>
+        </section>
+
+        <section className="flow-radar" aria-label="Interaction flow" data-reveal>
+          {interactionFlow.map((item) => (
+            <article className="flow-card" key={item.step}>
+              <span>{item.step}</span>
+              <h3>{item.title}</h3>
+              <p>{item.copy}</p>
+            </article>
+          ))}
+        </section>
+
+        <section className="bento-layout" data-reveal>
+          <article className="bento-intro bento-panel">
+            <SectionHeader
+              eyebrow="Positioning"
+              title="A professional profile shaped like an AI-era product story."
+              body="Instead of listing everything equally, this flow surfaces what matters most: architecture, delivery quality, AI experimentation, and platform ownership."
             />
-          </div>
-          <div className="overlay-card">
-            <p>Current focus</p>
-            <strong>
-              scalable frontend systems, accessible user experiences, and AI-enabled flows that connect to real tools
-            </strong>
-          </div>
-        </div>
-      </section>
-
-      <section className="stats-grid">
-        {stats.map((item) => (
-          <article className="stat-card" key={item.label}>
-            <strong>{item.value}</strong>
-            <span>{item.label}</span>
           </article>
-        ))}
-      </section>
 
-      <section className="bento-layout">
-        <article className="bento-intro bento-panel">
-          <SectionHeader
-            eyebrow="Positioning"
-            title="A portfolio centered on current professional delivery, not older academic project lists."
-            body="The story here is frontend depth, backend ownership, cloud delivery, performance, accessibility, and practical AI work."
-          />
-        </article>
+          {focusAreas.map((item) => (
+            <article className="bento-panel" key={item.title}>
+              <p className="panel-eyebrow">{item.eyebrow}</p>
+              <h3>{item.title}</h3>
+              <span>{item.copy}</span>
+            </article>
+          ))}
+        </section>
 
-        {focusAreas.map((item) => (
-          <article className="bento-panel" key={item.title}>
-            <p className="panel-eyebrow">{item.eyebrow}</p>
-            <h3>{item.title}</h3>
-            <span>{item.copy}</span>
-          </article>
-        ))}
-      </section>
-
-      <section className="section-block" id="experience">
+        <section className="section-block" id="experience" data-reveal>
         <SectionHeader
           eyebrow="Experience"
           title="Recent work across frontend systems, backend delivery, cloud infrastructure, and applied AI."
@@ -241,9 +357,9 @@ export default function HomePage() {
             </article>
           ))}
         </div>
-      </section>
+        </section>
 
-      <section className="section-block" id="work">
+        <section className="section-block" id="work" data-reveal>
         <SectionHeader
           eyebrow="Professional Highlights"
           title="A smaller set of meaningful work themes, with academic projects moved to supporting context."
@@ -287,11 +403,13 @@ export default function HomePage() {
             />
           </div>
         </div>
-      </section>
+        </section>
 
-      <PortfolioAI />
+        <div data-reveal>
+          <PortfolioAI />
+        </div>
 
-      <section className="section-block stack-section" id="stack">
+        <section className="section-block stack-section" id="stack" data-reveal>
         <SectionHeader
           eyebrow="Core Stack"
           title="The stack spans frontend frameworks, backend systems, cloud services, observability, and delivery tooling."
@@ -301,9 +419,9 @@ export default function HomePage() {
             <span key={item}>{item}</span>
           ))}
         </div>
-      </section>
+        </section>
 
-      <footer className="footer-card" id="contact">
+        <footer className="footer-card" id="contact" data-reveal>
         <div>
           <p className="panel-eyebrow">Contact</p>
           <h2>{profile.firstName} is open to full-stack roles with strong frontend, platform, or AI-enabled product ownership.</h2>
@@ -323,7 +441,8 @@ export default function HomePage() {
             Resume PDF
           </a>
         </div>
-      </footer>
-    </main>
+        </footer>
+      </main>
+    </ImmersiveShell>
   );
 }
