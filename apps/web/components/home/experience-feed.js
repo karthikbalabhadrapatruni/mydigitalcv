@@ -2,10 +2,10 @@ import SectionLabel from './section-label';
 
 export default function ExperienceFeed({ experienceFeed }) {
   return (
-    <section className="experience-board panel" id="experience" data-reveal>
+    <section className="experience-board panel" id="stations" data-reveal>
       <div className="board-heading">
-        <SectionLabel text="Experience Feed" />
-        <h2>Experience presented as a visual operations log instead of a conventional resume wall.</h2>
+        <SectionLabel text="Stations" />
+        <h2>Career movement shown as stations, with each stop adding more scale, responsibility, and system depth.</h2>
       </div>
       <div className="feed-list">
         {experienceFeed.map((item) => (

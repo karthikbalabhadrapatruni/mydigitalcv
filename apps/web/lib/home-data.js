@@ -3,7 +3,7 @@ export const profile = {
   fullName: 'Mohana Koundinya Karthik Balabhadrapatruni',
   title: 'Full-Stack Developer',
   summary:
-    'Building scalable interfaces, platform systems, and AI-enabled workflows across React, Next.js, Angular, Node.js, Python, cloud delivery, accessibility, and performance optimization.',
+    'Full-stack engineer with 5+ years of experience building scalable interfaces, backend systems, cloud delivery pipelines, accessible products, and practical AI-enabled workflows.',
   email: 'karthik.bmk3@gmail.com',
   github: 'https://github.com/karthikbalabhadrapatruni',
   linkedin: 'https://www.linkedin.com/in/karthikbalabhadrapatruni',
@@ -11,60 +11,63 @@ export const profile = {
 };
 
 export const metrics = [
-  { value: '5+', label: 'Years of delivery' },
+  { value: '5+', label: 'Years on the line' },
   { value: '7', label: 'Engineers led' },
-  { value: '85+', label: 'Desktop lighthouse' },
-  { value: 'WCAG 2.2', label: 'Accessibility baseline' },
+  { value: '85+', label: 'Desktop score' },
+  { value: 'WCAG 2.2', label: 'Accessibility bar' },
 ];
 
 export const launchBullets = [
-  'Frontend architecture with measurable UX and performance outcomes',
-  'Cloud-backed delivery and AI-enabled product workflows',
-  'Professional work prioritized over academic project noise',
+  'Primary route centers on professional delivery at Infosys',
+  'Cloud, frontend, and AI are presented as connected strengths',
+  'Academic work remains visible only as a quiet archive branch',
 ];
 
 export const activePrograms = [
   {
-    label: 'Program A',
-    title: 'Frontend platform architecture',
+    label: 'Route 01',
+    title: 'Frontend systems',
     text:
-      'White-labeled interfaces, micro-frontends, dynamic theming, design-system thinking, and product surfaces built for scale.',
+      'Micro-frontends, white-labeled products, dynamic theming, reusable architecture, and performance-sensitive interfaces designed to scale.',
     accent: 'coral',
+    stops: ['React.js', 'Next.js', 'Angular', 'SCSS', 'Accessibility'],
   },
   {
-    label: 'Program B',
-    title: 'AI-enabled product workflows',
+    label: 'Route 02',
+    title: 'Cloud delivery',
     text:
-      'Assistant-style flows, orchestration experiments, retrieval patterns, and Python-based integrations designed around actual user tasks.',
-    accent: 'mint',
-  },
-  {
-    label: 'Program C',
-    title: 'Cloud and delivery systems',
-    text:
-      'AWS, Azure, Terraform, pipelines, observability, performance budgets, and release quality treated as part of the product, not afterthoughts.',
+      'AWS, Azure, Terraform, delivery pipelines, observability, and system quality treated as part of the product experience itself.',
     accent: 'gold',
+    stops: ['AWS', 'Azure', 'Terraform', 'Pipelines', 'Grafana'],
+  },
+  {
+    label: 'Route 03',
+    title: 'AI workflows',
+    text:
+      'Agentic experiments, Python services, retrieval patterns, and practical AI workflows designed around business-facing use cases.',
+    accent: 'mint',
+    stops: ['Python', 'AI workflows', 'MCP patterns', 'Retrieval', 'Tooling'],
   },
 ];
 
 export const controlPanels = [
   {
-    label: 'Frontend control',
-    value: 'Next.js, React, Angular, micro-frontends, accessibility, performance',
+    label: 'Route summary',
+    value: 'The strongest work reads as one connected network instead of a page full of unrelated project cards.',
   },
   {
-    label: 'Backend control',
-    value: 'Node.js, Express.js, Python, MongoDB, MySQL, Postgres',
+    label: 'Reading mode',
+    value: 'Recruiters can scan visually first, then step into career stations and the AI console for detail.',
   },
   {
-    label: 'Delivery control',
-    value: 'AWS, Azure, Terraform, pipelines, observability, release quality',
+    label: 'Archive handling',
+    value: 'Academic work stays present, but it is intentionally reduced to a low-emphasis archive branch.',
   },
 ];
 
 export const experienceFeed = [
   {
-    stamp: '2021 -> Now',
+    stamp: 'Station A',
     title: 'Specialist Programmer · Infosys',
     points: [
       'Led an Agile team of 7 from solution shaping to deployment.',
@@ -75,7 +78,7 @@ export const experienceFeed = [
     ],
   },
   {
-    stamp: '2020 -> 2021',
+    stamp: 'Station B',
     title: 'Digital Specialist Engineer · Infosys',
     points: [
       'Built on a no-code and low-code web generation platform.',
@@ -109,7 +112,7 @@ export const stackSignals = [
 ];
 
 export const archiveItems = [
-  'NOTERIDE Unity prototype',
-  'Early machine learning experiments',
-  'Academic computer vision and analytics projects',
+  'NOTERIDE endless runner prototype',
+  'Early machine learning exploration work',
+  'Academic computer vision and analytics experiments',
 ];

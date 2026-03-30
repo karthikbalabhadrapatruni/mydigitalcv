@@ -6,8 +6,8 @@ export default function Topbar() {
       </a>
       <nav className="topnav" aria-label="Primary">
         <a href="#overview">Overview</a>
-        <a href="#programs">Programs</a>
-        <a href="#experience">Experience</a>
+        <a href="#lines">Lines</a>
+        <a href="#stations">Stations</a>
         <a href="#ai">AI Console</a>
         <a href="#archive">Archive</a>
         <a href="#contact">Contact</a>

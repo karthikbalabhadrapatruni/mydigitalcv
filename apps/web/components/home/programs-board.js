@@ -3,14 +3,19 @@ import SectionLabel from './section-label';
 export default function ProgramsBoard({ activePrograms, controlPanels }) {
   return (
     <>
-      <section className="program-board" id="programs" data-reveal>
+      <section className="program-board" id="lines" data-reveal>
         <div className="program-intro panel">
-          <SectionLabel text="Active Programs" />
-          <h2>The story is told through what you actively build now, not through old project screenshots.</h2>
+          <SectionLabel text="Route Lines" />
+          <h2>Follow the lines that define the work: product interfaces, resilient delivery, and AI-enabled systems.</h2>
           <p>
-            This structure treats your portfolio like a designed sequence: current focus first, delivery depth second,
-            AI exploration third, and older academic work only as supporting context.
+            The structure is visual first and resume second, so visitors understand your range quickly without getting
+            buried in generic portfolio sections.
           </p>
+          <div className="map-legend" aria-hidden="true">
+            <span className="legend-coral" />
+            <span className="legend-gold" />
+            <span className="legend-mint" />
+          </div>
         </div>
 
         <div className="program-stack">
@@ -19,7 +24,11 @@ export default function ProgramsBoard({ activePrograms, controlPanels }) {
               <span>{item.label}</span>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
-              <div className="program-orbit" aria-hidden="true" />
+              <div className="stop-cloud">
+                {item.stops.map((stop) => (
+                  <span key={stop}>{stop}</span>
+                ))}
+              </div>
             </article>
           ))}
         </div>

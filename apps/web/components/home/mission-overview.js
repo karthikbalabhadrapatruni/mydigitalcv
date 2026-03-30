@@ -5,8 +5,8 @@ export default function MissionOverview({ profile, heroImage, launchBullets }) {
   return (
     <section className="mission-grid" id="top" data-reveal>
       <div className="mission-copy" id="overview">
-        <SectionLabel text="Launch Sequence" />
-        <h1>A cinematic portfolio for a full-stack engineer working across products, systems, and AI.</h1>
+        <SectionLabel text="Metro Narrative" />
+        <h1>One route map for frontend systems, cloud delivery, and practical AI work.</h1>
         <p className="mission-text">{profile.summary}</p>
 
         <div className="hero-actions">
@@ -30,7 +30,7 @@ export default function MissionOverview({ profile, heroImage, launchBullets }) {
             <span />
           </div>
           <div className="console-body">
-            <p>$ launch.profile</p>
+            <p>$ metro.launch --mode professional</p>
             {launchBullets.map((item) => (
               <div className="console-line" key={item}>
                 <span>&gt;</span>
@@ -51,19 +51,19 @@ export default function MissionOverview({ profile, heroImage, launchBullets }) {
             sizes="(max-width: 900px) 100vw, 40vw"
           />
         </div>
-        <div className="status-card status-a">
-          <span>Status</span>
-          <strong>Shipping product systems</strong>
+        <div className="metro-card metro-card-a">
+          <span>Line A</span>
+          <strong>Product interfaces</strong>
         </div>
-        <div className="status-card status-b">
-          <span>Focus</span>
-          <strong>AI, cloud, accessibility, performance</strong>
+        <div className="metro-card metro-card-b">
+          <span>Line B</span>
+          <strong>Delivery architecture</strong>
         </div>
-        <div className="status-card status-c">
-          <span>Mode</span>
-          <strong>Professional work first, archive second</strong>
+        <div className="metro-card metro-card-c">
+          <span>Line C</span>
+          <strong>Applied AI systems</strong>
         </div>
-        <div className="scan-grid" aria-hidden="true" />
+        <div className="metro-overlay" aria-hidden="true" />
       </div>
     </section>
   );

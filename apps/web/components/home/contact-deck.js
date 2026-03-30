@@ -4,8 +4,8 @@ export default function ContactDeck({ profile }) {
   return (
     <footer className="contact-deck panel" id="contact" data-reveal>
       <div>
-        <SectionLabel text="Contact" />
-        <h2>Open to full-stack roles that value interface quality, system thinking, and AI-enabled product delivery.</h2>
+        <SectionLabel text="Final Stop" />
+        <h2>Open to full-stack roles where product systems, engineering quality, and AI-enabled delivery all matter.</h2>
       </div>
       <div className="contact-links">
         <a href={`mailto:${profile.email}`}>{profile.email}</a>
