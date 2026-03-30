@@ -56,17 +56,17 @@ export default function PortfolioAI() {
     <section className="section-block ai-section" id="ai">
       <div className="ai-header">
         <div className="section-header">
-          <p>Portfolio AI</p>
-          <h2>Ask for a fit summary, a recruiter-ready answer, or a case-study style explanation.</h2>
+          <p>Experience Assistant</p>
+          <h2>Ask for a recruiter summary, a job-fit readout, or a case-study style explanation.</h2>
           <span>
-            This assistant is grounded in your actual resume and portfolio context, so it answers with relevant experience instead of generic chatbot filler.
+            This assistant is grounded in your actual resume and portfolio context, so it can turn the page into something more useful than static copy.
           </span>
         </div>
         <div className="ai-badges">
           <span>Python FastAPI</span>
-          <span>Gemini backed</span>
-          <span>Recruiter-friendly</span>
-          <span>Portfolio grounded</span>
+          <span>Gemini</span>
+          <span>Recruiter focused</span>
+          <span>Grounded context</span>
         </div>
       </div>
 

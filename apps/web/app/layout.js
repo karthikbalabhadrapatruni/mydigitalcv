@@ -1,15 +1,15 @@
-import { Fraunces, Space_Grotesk } from 'next/font/google';
+import { Manrope, Sora } from 'next/font/google';
 import './globals.css';
 
-const bodyFont = Space_Grotesk({
+const bodyFont = Manrope({
   subsets: ['latin'],
   variable: '--font-body',
 });
 
-const displayFont = Fraunces({
+const displayFont = Sora({
   subsets: ['latin'],
   variable: '--font-display',
-  weight: ['500', '600', '700'],
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata = {

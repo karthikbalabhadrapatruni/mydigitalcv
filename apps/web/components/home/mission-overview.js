@@ -3,67 +3,46 @@ import SectionLabel from './section-label';
 
 export default function MissionOverview({ profile, heroImage, launchBullets }) {
   return (
-    <section className="mission-grid" id="top" data-reveal>
-      <div className="mission-copy" id="overview">
-        <SectionLabel text="Starting Point" />
-        <h1>An engineering journey mapped as connected product, cloud, and AI lines.</h1>
-        <p className="mission-text">{profile.summary}</p>
+    <section className="hero-grid" id="overview" data-reveal>
+      <div className="hero-copy">
+        <SectionLabel text="Overview" />
+        <h1>Full-stack developer building performant products, delivery systems, and practical AI workflows.</h1>
+        <p className="hero-text">{profile.summary}</p>
 
         <div className="hero-actions">
           <a className="button button-primary" href={profile.resume} target="_blank" rel="noreferrer">
             Open Resume
           </a>
           <a className="button button-secondary" href={profile.linkedin} target="_blank" rel="noreferrer">
-            View LinkedIn
+            LinkedIn
           </a>
         </div>
 
-        <div className="identity-strip">
-          <span>{profile.title}</span>
-          <strong>{profile.fullName}</strong>
-        </div>
-
-        <div className="operator-console">
-          <div className="console-head">
-            <span />
-            <span />
-            <span />
-          </div>
-          <div className="console-body">
-            <p>$ journey.open --focus current-work</p>
-            {launchBullets.map((item) => (
-              <div className="console-line" key={item}>
-                <span>&gt;</span>
-                <strong>{item}</strong>
-              </div>
-            ))}
-          </div>
+        <div className="hero-highlights">
+          {launchBullets.map((item) => (
+            <span key={item}>{item}</span>
+          ))}
         </div>
       </div>
 
-      <div className="mission-visual">
-        <div className="portrait-frame">
-          <Image
-            src={heroImage}
-            alt={profile.fullName}
-            priority
-            placeholder="blur"
-            sizes="(max-width: 900px) 100vw, 40vw"
-          />
+      <div className="hero-side">
+        <div className="portrait-card">
+          <div className="portrait-frame">
+            <Image
+              src={heroImage}
+              alt={profile.fullName}
+              priority
+              placeholder="blur"
+              sizes="(max-width: 900px) 100vw, 34vw"
+            />
+          </div>
         </div>
-        <div className="metro-card metro-card-a">
-          <span>Route A</span>
-          <strong>Product interfaces</strong>
+
+        <div className="hero-note">
+          <span>{profile.title}</span>
+          <strong>{profile.focus}</strong>
+          <p>{profile.fullName}</p>
         </div>
-        <div className="metro-card metro-card-b">
-          <span>Route B</span>
-          <strong>Delivery architecture</strong>
-        </div>
-        <div className="metro-card metro-card-c">
-          <span>Route C</span>
-          <strong>Applied AI systems</strong>
-        </div>
-        <div className="metro-overlay" aria-hidden="true" />
       </div>
     </section>
   );

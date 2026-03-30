@@ -4,6 +4,8 @@ export const profile = {
   title: 'Full-Stack Developer',
   summary:
     'Full-stack engineer with 5+ years of experience building scalable interfaces, backend systems, cloud delivery pipelines, accessible products, and practical AI-enabled workflows.',
+  focus:
+    'Best at frontend architecture, cloud-backed delivery, and AI-enabled systems that still feel product-ready and maintainable.',
   email: 'karthik.bmk3@gmail.com',
   github: 'https://github.com/karthikbalabhadrapatruni',
   linkedin: 'https://www.linkedin.com/in/karthikbalabhadrapatruni',
@@ -11,79 +13,105 @@ export const profile = {
 };
 
 export const metrics = [
-  { value: '5+', label: 'Years shipped' },
-  { value: '7', label: 'Engineers led' },
-  { value: '85+', label: 'Desktop score' },
-  { value: 'WCAG 2.2', label: 'Accessibility benchmark' },
+  { value: '5+', label: 'Years shipping products' },
+  { value: '7', label: 'Engineers led in Agile delivery' },
+  { value: '85+', label: 'Desktop Lighthouse outcomes' },
+  { value: 'WCAG 2.2', label: 'Accessibility benchmark delivered' },
 ];
 
 export const launchBullets = [
-  'Primary route centers on professional delivery at Infosys',
-  'Cloud, frontend, and AI are presented as connected strengths',
-  'Academic work remains visible only as a quiet archive branch',
+  'Led delivery from solution shaping to deployment',
+  'Built white-labelled frontend platforms and AI proofs of concept',
+  'Balanced performance, accessibility, cloud delivery, and product quality',
 ];
 
 export const activePrograms = [
   {
-    label: 'Route 01',
-    title: 'Frontend systems',
+    id: 'frontend',
+    label: 'Frontend Systems',
+    title: 'Design and ship product surfaces that scale across brands, teams, and performance constraints.',
     text:
-      'Micro-frontends, white-labeled products, dynamic theming, reusable architecture, and performance-sensitive interfaces designed to scale.',
-    accent: 'coral',
-    stops: ['React.js', 'Next.js', 'Angular', 'SCSS', 'Accessibility'],
+      'Strongest when building reusable frontend systems: micro-frontends, white-labelled interfaces, theming, accessibility, and performance improvements that materially change product quality.',
+    proof: 'Delivered a high-performance white-labelled frontend architecture using Next.js and React.js.',
+    highlights: [
+      'Micro-frontend architecture',
+      'Dynamic theming and design flexibility',
+      'Performance tuning across FCP, LCP, CLS, and TBT',
+      'WCAG 2.2 Level A alignment',
+    ],
+    tools: ['React.js', 'Next.js', 'Angular', 'JavaScript', 'SCSS', 'Accessibility'],
   },
   {
-    label: 'Route 02',
-    title: 'Cloud delivery',
+    id: 'cloud',
+    label: 'Cloud Delivery',
+    title: 'Treat infrastructure, deployment, and observability as part of the product experience.',
     text:
-      'AWS, Azure, Terraform, delivery pipelines, observability, and system quality treated as part of the product experience itself.',
-    accent: 'gold',
-    stops: ['AWS', 'Azure', 'Terraform', 'Pipelines', 'Grafana'],
+      'Comfortable moving from application work into cloud setup, pipelines, and platform reliability so delivery stays fast and systems remain maintainable after launch.',
+    proof: 'Implemented infrastructure and delivery workflows across AWS, Azure, Terraform, and Azure Pipelines.',
+    highlights: [
+      'Terraform-based infrastructure workflows',
+      'AWS architecture with Lambda, AppSync, API Gateway, S3, and CloudFront',
+      'Delivery pipelines and provisioning improvements',
+      'Observability and quality mindset throughout the stack',
+    ],
+    tools: ['AWS', 'Azure', 'Terraform', 'Pipelines', 'Grafana', 'Instana'],
   },
   {
-    label: 'Route 03',
-    title: 'AI workflows',
+    id: 'ai',
+    label: 'AI Workflows',
+    title: 'Build practical AI-assisted workflows instead of novelty demos that stop at chat.',
     text:
-      'Agentic experiments, Python services, retrieval patterns, and practical AI workflows designed around business-facing use cases.',
-    accent: 'mint',
-    stops: ['Python', 'AI workflows', 'MCP patterns', 'Retrieval', 'Tooling'],
+      'Recent work leans into business-facing AI: orchestration, retrieval, speech, integrations, and Python services that plug into existing systems in a realistic way.',
+    proof: 'Built multiple agentic AI proofs of concept using orchestration, retrieval, speech, and Python integration patterns.',
+    highlights: [
+      'LangChain, LlamaIndex, Azure OpenAI, and Whisper experimentation',
+      'MCP server and client integrations in Python',
+      'Retrieval patterns with Azure Search and database-backed context',
+      'Portfolio AI implemented with a Python service architecture',
+    ],
+    tools: ['Python', 'Agentic AI', 'Retrieval', 'MCP', 'Postgres', 'Tooling'],
   },
 ];
 
 export const controlPanels = [
   {
-    label: 'Route summary',
-    value: 'The strongest work reads as one connected network instead of a page full of unrelated project cards.',
+    label: 'Clear role',
+    value: 'The page introduces role, strengths, and outcomes immediately so recruiters do not need to decode the story.',
   },
   {
-    label: 'Reading mode',
-    value: 'Recruiters can scan visually first, then step into career stations and the AI console for detail.',
+    label: 'Curated proof',
+    value: 'Professional delivery stays front and center, while academic work is intentionally kept secondary.',
   },
   {
-    label: 'Archive handling',
-    value: 'Academic work stays present, but it is intentionally reduced to a low-emphasis archive branch.',
+    label: 'Fast scanning',
+    value: 'Each section is short, outcome-led, and designed to surface fit within a few minutes of review.',
   },
 ];
 
 export const experienceFeed = [
   {
-    stamp: 'Station A',
-    title: 'Specialist Programmer · Infosys',
+    period: 'Dec 2021 - Present',
+    role: 'Specialist Programmer',
+    company: 'Infosys',
+    focus: 'AI proofs of concept, frontend platforms, cloud delivery',
     points: [
       'Led an Agile team of 7 from solution shaping to deployment.',
-      'Built AI proofs of concept using orchestration, retrieval, speech, and system integration patterns.',
-      'Delivered white-labeled micro-frontend applications with Next.js and React.js.',
+      'Built agentic AI proofs of concept using orchestration, retrieval, speech, and system integration patterns.',
+      'Delivered white-labelled micro-frontend applications with Next.js and React.js.',
       'Improved FCP, LCP, CLS, and TBT while meeting WCAG 2.2 Level A goals.',
       'Implemented cloud and delivery workflows with Terraform, Azure Pipelines, and AWS services.',
     ],
   },
   {
-    stamp: 'Station B',
-    title: 'Digital Specialist Engineer · Infosys',
+    period: 'Nov 2020 - Dec 2021',
+    role: 'Digital Specialist Engineer',
+    company: 'Infosys',
+    focus: 'Platform workflows, permissions, and customization',
     points: [
       'Built on a no-code and low-code web generation platform.',
       'Worked across Angular frontend, Express.js backend, and MongoDB.',
-      'Implemented permissions, role definitions, theming, and custom font support.',
+      'Implemented user and group management with role-based permissions.',
+      'Added dynamic theming and custom font import workflows.',
     ],
   },
 ];
