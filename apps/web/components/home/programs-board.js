@@ -1,19 +1,19 @@
 import SectionLabel from './section-label';
 import CapabilityTabs from './capability-tabs';
 
-export default function ProgramsBoard({ activePrograms, controlPanels }) {
+export default function ProgramsBoard({ activePrograms, controlPanels, preferredId, lensLabel }) {
   return (
     <section className="strength-section" id="strengths" data-reveal>
       <div className="section-heading">
-        <SectionLabel text="Strengths" />
-        <h2>The strongest parts of the portfolio are grouped into three clear capability areas.</h2>
+        <SectionLabel text="Core Areas" />
+        <h2>The profile is easiest to understand through these three work areas.</h2>
         <p>
-          This keeps the page intuitive: visitors can move from high-level fit into deeper proof without bouncing
-          through disconnected sections.
+          Frontend, cloud, and AI overlap in my work, but splitting them this way makes it easier to scan. The current
+          emphasis is set for <strong>{lensLabel}</strong>.
         </p>
       </div>
 
-      <CapabilityTabs items={activePrograms} />
+      <CapabilityTabs items={activePrograms} preferredId={preferredId} />
 
       <div className="principles-grid">
         {controlPanels.map((item) => (

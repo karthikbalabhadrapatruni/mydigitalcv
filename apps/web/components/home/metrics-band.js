@@ -1,6 +1,6 @@
 import SectionLabel from './section-label';
 
-export default function MetricsBand({ metrics, stackSignals }) {
+export default function MetricsBand({ metrics, activeLens }) {
   return (
     <section className="impact-grid" data-reveal>
       <div className="metric-grid">
@@ -12,18 +12,12 @@ export default function MetricsBand({ metrics, stackSignals }) {
         ))}
       </div>
 
-      <article className="impact-panel">
-        <SectionLabel text="Why It Reads Fast" />
-        <h2>Clear role, measurable outcomes, and quick paths into the work that matters most.</h2>
+      <article className="insight-panel">
+        <SectionLabel text="How To Read This" />
+        <h2>You can read this page based on the kind of role you have in mind.</h2>
         <p>
-          The site is intentionally structured for fast scanning: recruiters get your role, strongest capability areas,
-          recent delivery context, and an AI-assisted summary path without digging through decorative sections.
+          Right now the page is highlighting the parts that matter most for <strong>{activeLens?.label}</strong>.
         </p>
-        <div className="impact-tags">
-          {stackSignals.slice(0, 8).map((item) => (
-            <span key={item}>{item}</span>
-          ))}
-        </div>
       </article>
     </section>
   );

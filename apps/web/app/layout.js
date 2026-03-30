@@ -15,7 +15,7 @@ const displayFont = Sora({
 export const metadata = {
   title: 'Karthik Balabhadrapatruni | Full-Stack Developer',
   description:
-    'Full-stack portfolio for Mohana Koundinya Karthik Balabhadrapatruni, featuring React, Next.js, Angular, Node.js, Python, cloud, accessibility, and practical AI work.',
+    'Portfolio of Mohana Koundinya Karthik Balabhadrapatruni, a full-stack developer with experience in React, Next.js, Angular, Node.js, Python, AWS, Azure, accessibility, and AI POCs.',
 };
 
 export default function RootLayout({ children }) {

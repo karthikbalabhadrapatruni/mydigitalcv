@@ -5,10 +5,9 @@ export default function ContactDeck({ profile }) {
     <footer className="contact-card" id="contact" data-reveal>
       <div>
         <SectionLabel text="Contact" />
-        <h2>Open to full-stack roles where product quality, platform thinking, and AI-enabled delivery matter.</h2>
+        <h2>Open to full-stack roles across product engineering, platform work, and AI-related systems.</h2>
         <p>
-          If the role needs someone comfortable moving between frontend architecture, backend systems, cloud delivery,
-          and AI workflows, this is a strong fit.
+          I am especially interested in roles where frontend, backend, cloud, and AI work come together.
         </p>
       </div>
 

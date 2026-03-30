@@ -1,9 +1,16 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-export default function CapabilityTabs({ items }) {
-  const [activeId, setActiveId] = useState(items[0]?.id);
+export default function CapabilityTabs({ items, preferredId }) {
+  const [activeId, setActiveId] = useState(preferredId ?? items[0]?.id);
+
+  useEffect(() => {
+    if (preferredId) {
+      setActiveId(preferredId);
+    }
+  }, [preferredId]);
+
   const activeItem = items.find((item) => item.id === activeId) ?? items[0];
 
   return (
@@ -25,7 +32,7 @@ export default function CapabilityTabs({ items }) {
       <article className="capability-panel">
         <div className="capability-copy">
           <p className="section-label">{activeItem.label}</p>
-          <h3>{activeItem.title}</h3>
+          <h3>{activeItem.headline}</h3>
           <p>{activeItem.text}</p>
           <div className="capability-proof">{activeItem.proof}</div>
         </div>

@@ -56,17 +56,17 @@ export default function PortfolioAI() {
     <section className="section-block ai-section" id="ai">
       <div className="ai-header">
         <div className="section-header">
-          <p>Experience Assistant</p>
-          <h2>Ask for a recruiter summary, a job-fit readout, or a case-study style explanation.</h2>
+          <p>Ask About My Work</p>
+          <h2>Use this to ask about my experience, my fit for a role, or details behind a piece of work.</h2>
           <span>
-            This assistant is grounded in your actual resume and portfolio context, so it can turn the page into something more useful than static copy.
+            This is based on the same resume and portfolio content shown on the page.
           </span>
         </div>
         <div className="ai-badges">
-          <span>Python FastAPI</span>
+          <span>Python backend</span>
           <span>Gemini</span>
-          <span>Recruiter focused</span>
-          <span>Grounded context</span>
+          <span>Resume based</span>
+          <span>Role-fit Q&A</span>
         </div>
       </div>
 
@@ -119,7 +119,7 @@ export default function PortfolioAI() {
             {!error && answer ? <p>{answer}</p> : null}
             {!error && !answer ? (
               <p className="ai-placeholder">
-                Try one of the example prompts to show how your experience can be summarized, matched, or explained.
+                Try one of the example prompts to get a quick answer about skills, experience, or job fit.
               </p>
             ) : null}
           </div>

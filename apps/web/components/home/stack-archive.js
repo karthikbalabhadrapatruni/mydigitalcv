@@ -15,14 +15,13 @@ export default function StackArchive({ stackSignals, archiveItems }) {
 
       <article className="archive-panel" id="archive">
         <SectionLabel text="Archive" />
-        <h2>Earlier academic work is available, but it stays intentionally secondary.</h2>
+        <h2>Earlier academic work is still here, but it is not the main focus of this portfolio.</h2>
         <p>
-          Those projects were useful for learning, but they are not the core hiring story compared with recent
-          professional delivery.
+          These projects were useful while learning, but recent Infosys work is more relevant for hiring.
         </p>
 
         <details className="archive-disclosure">
-          <summary>View supporting academic projects</summary>
+          <summary>View academic projects</summary>
           <div className="archive-list">
             {archiveItems.map((item) => (
               <span key={item}>{item}</span>
