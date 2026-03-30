@@ -11,10 +11,10 @@ export const profile = {
 };
 
 export const metrics = [
-  { value: '5+', label: 'Years on the line' },
+  { value: '5+', label: 'Years shipped' },
   { value: '7', label: 'Engineers led' },
   { value: '85+', label: 'Desktop score' },
-  { value: 'WCAG 2.2', label: 'Accessibility bar' },
+  { value: 'WCAG 2.2', label: 'Accessibility benchmark' },
 ];
 
 export const launchBullets = [

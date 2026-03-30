@@ -5,8 +5,8 @@ export default function MissionOverview({ profile, heroImage, launchBullets }) {
   return (
     <section className="mission-grid" id="top" data-reveal>
       <div className="mission-copy" id="overview">
-        <SectionLabel text="Metro Narrative" />
-        <h1>One route map for frontend systems, cloud delivery, and practical AI work.</h1>
+        <SectionLabel text="Starting Point" />
+        <h1>An engineering journey mapped as connected product, cloud, and AI lines.</h1>
         <p className="mission-text">{profile.summary}</p>
 
         <div className="hero-actions">
@@ -30,7 +30,7 @@ export default function MissionOverview({ profile, heroImage, launchBullets }) {
             <span />
           </div>
           <div className="console-body">
-            <p>$ metro.launch --mode professional</p>
+            <p>$ journey.open --focus current-work</p>
             {launchBullets.map((item) => (
               <div className="console-line" key={item}>
                 <span>&gt;</span>
@@ -52,15 +52,15 @@ export default function MissionOverview({ profile, heroImage, launchBullets }) {
           />
         </div>
         <div className="metro-card metro-card-a">
-          <span>Line A</span>
+          <span>Route A</span>
           <strong>Product interfaces</strong>
         </div>
         <div className="metro-card metro-card-b">
-          <span>Line B</span>
+          <span>Route B</span>
           <strong>Delivery architecture</strong>
         </div>
         <div className="metro-card metro-card-c">
-          <span>Line C</span>
+          <span>Route C</span>
           <strong>Applied AI systems</strong>
         </div>
         <div className="metro-overlay" aria-hidden="true" />

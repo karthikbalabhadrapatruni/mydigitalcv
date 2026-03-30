@@ -5,11 +5,11 @@ export default function ProgramsBoard({ activePrograms, controlPanels }) {
     <>
       <section className="program-board" id="lines" data-reveal>
         <div className="program-intro panel">
-          <SectionLabel text="Route Lines" />
-          <h2>Follow the lines that define the work: product interfaces, resilient delivery, and AI-enabled systems.</h2>
+          <SectionLabel text="Route Network" />
+          <h2>Each route reveals a different strength, but they all connect into one professional system.</h2>
           <p>
-            The structure is visual first and resume second, so visitors understand your range quickly without getting
-            buried in generic portfolio sections.
+            Instead of dropping people into isolated cards, the page helps them move through your frontend, cloud, and
+            AI work as a connected network.
           </p>
           <div className="map-legend" aria-hidden="true">
             <span className="legend-coral" />

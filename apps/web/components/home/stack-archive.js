@@ -5,8 +5,8 @@ export default function StackArchive({ stackSignals, archiveItems, archiveImage 
   return (
     <section className="stack-archive-layout" data-reveal>
       <article className="stack-panel panel">
-        <SectionLabel text="Line Legend" />
-        <h2>The stack stays visible as a system legend instead of turning the page into a long tools checklist.</h2>
+        <SectionLabel text="System Legend" />
+        <h2>The stack appears as a legend for the journey, so the technology stays visible without taking over the story.</h2>
         <div className="signal-cloud">
           {stackSignals.map((item) => (
             <span key={item}>{item}</span>

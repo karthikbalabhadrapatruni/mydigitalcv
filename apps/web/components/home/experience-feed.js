@@ -4,8 +4,8 @@ export default function ExperienceFeed({ experienceFeed }) {
   return (
     <section className="experience-board panel" id="stations" data-reveal>
       <div className="board-heading">
-        <SectionLabel text="Stations" />
-        <h2>Career movement shown as stations, with each stop adding more scale, responsibility, and system depth.</h2>
+        <SectionLabel text="Career Stations" />
+        <h2>Career movement shown as major stations, with each stop adding more scale, responsibility, and systems depth.</h2>
       </div>
       <div className="feed-list">
         {experienceFeed.map((item) => (
